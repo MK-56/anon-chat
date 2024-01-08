@@ -5,7 +5,9 @@
 }
 
 html, body {
-  background: #eee;
+  text-shadow: 2.1px 2.1px 10px #000000;
+  background: #7a7a7a;
+    background-image: linear-gradient(to right,#757575, #404040);
   width: 100%;
   height: 100%;
   margin: 0;
@@ -30,30 +32,29 @@ h1, .user-count {
   padding: 20px 0;
 }
 
-.chat {
-  content: '';
-  width: 100%;
-  height: calc(100vh - 165px);
-  background: white;
-  padding: 5px 10px;
-}
 
 .chat p {
   margin: 0 0 5px 0;
 }
 
-input, button {
+input, button #rcorners1 {
+  border-radius: 10px;
+  padding: 20px; 
+  width: 200px;
+  height: 29px; 
+  box-shadow: 10px 10px;
   width: 100%;
   font: inherit;
-  background: #fff;
-  border: none;
+  background: #ffffff;
+    background-image: radial-gradient(circle, #ffffff, #bababa, #858585);
+  border: #000000;
   margin-top: 10px;
   padding: 5px 10px;
-}
+
 
 button:hover {
   cursor: pointer;
-  background: #ddd;
+  background: #ffffff;
 }
 
 @media all and (min-width: 500px) {
@@ -67,4 +68,45 @@ button:hover {
     float: right;
     width: 150px;
   }
+}
+. {
+  position: absolute;
+  top: 15px;
+  left: 568px;a
+  width: 120px;a
+  /* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
 }
